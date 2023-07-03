@@ -78,6 +78,7 @@ Here is how our model scored on the testing set:
 <img src="images/baseline_report.jpg", width = 300, height = 133/>
 </div>
 
+talk about how it predicts everything as pneumonia. Then do final model. explain it well from cnn to skip step. then ...
 
 
 
