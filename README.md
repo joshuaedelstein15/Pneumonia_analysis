@@ -70,6 +70,14 @@ We also pulled up sample images from the train set, of Pneumonia and Normal pati
 ## Modeling 
 
 ### Baseline Model
-For our baseline model we created a very simple model. We loaded up the data with `ImageDataGenerator()` and `flow_from_directory()`. We then reshaped the images and labels, to make sure the model would run properly. Finally, we created our model as a sequential model, where one layer would build on the next. It had a Dense input layer with 64 units and used `'relu'` activation, and a Dense output layer with `'sigmoid`' activation and one output. We then compiled the model with a `'SGD'` optimizer, loss of `'binary crossentropy'` and accuracy as our metric. 
+For our baseline model we created a very simple model. We loaded up the data with `ImageDataGenerator()` and `flow_from_directory()`. We then reshaped the images and labels, to make sure the model would run properly. Finally, we created our model as a sequential model, where one layer would build on the next. It had a Dense input layer with 64 units and used `'relu'` activation, and a Dense output layer with `'sigmoid`' activation and one output. We then compiled the model with a `'SGD'` optimizer, loss of `'binary crossentropy'` and accuracy as our metric. We then created an `early stopping` parameter for our model if the results were not improving after 5 epochs. As mentioned earlier, being that the most important metric for us is recall, we monitored the models loss in the stop parameter, as the better the model the lower the recall.
+
+Here is how our model scored on the testing set:
+
+<div>
+<img src="images/baseline_report.jpg", width = 300, height = 133/>
+</div>
+
+
 
 
