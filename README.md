@@ -16,7 +16,7 @@ Instead a leading doctor on the ground in Africa, Dr. Xavier Radiance, suggested
 It's important to think about whether false positives or false negatives are worse in this case. A false positive means that the model predicts that the xray has pneumonia when it really doesn't. This may lead to providing treatment for a patient when it is not necessary. While a false negative means that the model predicts that the patient doesn't have pneumonia when he really does. This would mean not giving a patient treatment when they do need it. Being that we have a safety net of doctors reading the positive xrays, we don't need to be concerned for false positives nearly as much as false negatives, as the doctors will read all the xrays that are predicted positive. As such we will want to have a recall as high as possible so we catch all the patients with pneumonia.
 
 <div>
-<img src="images/xray.jpg", width = 800, height = 400/>
+<img src="images/xray.jpg", width = 900, height = 450/>
 </div>
 
 Photo by <a href="https://unsplash.com/@nci?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">National Cancer Institute</a> on <a href="https://unsplash.com/s/photos/x-ray?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -39,22 +39,22 @@ We found that we had 3 datasets: Train, Test, Val. We used filepaths to load up 
 Here is the breakdown of xrays with pneumonia in all 3 sets:
 
 <div>
-<img src="images/train_dist.jpg", width = 300, height = 300/>
+<img src="images/train_dist.jpg", width = 400, height = 300/>
 </div>
 
 
 <div>
-<img src="images/val_dist.jpg", width = 300, height = 300/>
+<img src="images/val_dist.jpg", width = 400, height = 300/>
 </div>
 
 <div>
-<img src="images/test_dist.jpg", width = 300, height = 300/>
+<img src="images/test_dist.jpg", width = 400, height = 300/>
 </div>
 
 And here is a summary of the above: 
 
 <div>
-<img src="images/summary_dist.jpg", width = 500, height = 200/>
+<img src="images/summary_dist.jpg", width = 300, height = 100/>
 </div>
 
 We also pulled up sample images from the train set, of Pneumonia and Normal patients.
