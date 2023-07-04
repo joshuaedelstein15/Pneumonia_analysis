@@ -93,7 +93,7 @@ Additionally, this model had a loss of .35 and a ROC score of .96.
 All of our models had very strong recall scores; however, this model had scored higher than previous models in all other metrics, making it an easy decision. 
 
 <div>
-<img src="images/matrix.jpg", width = 450, height = 300/>
+<img src="images/matrix.jpg", width = 400, height = 300/>
 </div>
 
 The model was tested on 624 patients, there were 390(9+381) patients who had pneumonia. The model correctly predicted the pneumonia status of 537(156+381) patients, this gives us the accuracy score we saw above of 86%. The model correctly captured 381 of the 390 patients who had pneumonia, giving us the recall score of 98%. The model incorrectly predicted that 78 patients had pneumonia, which gave us a precision score of 83%. The recall and precision scores were combined to give us an f1 score of .9.
@@ -106,7 +106,7 @@ LIME helps us see the important factors behind a model's prediction for a partic
 The model predicted that the below image had Pneumonia with 99% certainty.
 
 <div>
-<img src="images/pneumonia_lime.jpg", width = 700, height = 350/>
+<img src="images/pneumonia_lime.jpg", width = 750, height = 350/>
 </div>
 
 The areas showing in the axis on the left display the top 5 most important features that the model looks at. The area on the right displays the top 10 most important features, the green are the positive features(meaning it's more likely a patient has pneumonia), and the red is the negative. Based on the image on the left, it seems as though the top  5 most important features are not even in the chest cavity. It seems as though the model isn't focusing on the right area at the right thing. However, this is not so alarming for a few reasons. We see from the image on the right, that areas in the chest cavity are still within the top 10 most important features, and thus are taken into consideration. Additionally, in our particular case we want the recall to be higher, so it is not an issue if the model slightly overpredicts pneumonia. This is especially since our model does take into account areas within the chest cavity within the top 10 most important features.
@@ -114,7 +114,7 @@ The areas showing in the axis on the left display the top 5 most important featu
 The model then predicted that this image contains pneumonia with .001% certainty, meaning that it is most likely a normal/ healthy xray.
 
 <div>
-<img src="images/normal_lime.jpg", width = 700, height = 350/>
+<img src="images/normal_lime.jpg", width = 750, height = 350/>
 </div>
 
 This is a good sign as most of the top factors are in the chest cavity.
