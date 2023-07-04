@@ -57,11 +57,13 @@ And here is a summary of the above:
 <img src="images/summary_dist.jpg", width = 300, height = 100/>
 </div>
 
-We also pulled up sample images from the train set, of Pneumonia and Normal patients.
+We also pulled up sample images from the train set of Normal/ Healthy patients. 
 
 <div>
 <img src="images/normal_xray.jpg", width = 800, height = 400/>
 </div>
+
+And here are some xrays with Pneumonia: 
 
 <div>
 <img src="images/pneumonia_xray.jpg", width = 800, height = 400/>
@@ -169,6 +171,3 @@ presentation/: This directory includes the pdf of our presentation.
 - https://www.kaggle.com/code/jonaspalucibarbosa/chest-x-ray-pneumonia-cnn-transfer-learning
 - https://www.kaggle.com/code/pujithagrandhi/classification-of-pneumonia-using-cnn
 - https://www.kaggle.com/code/bennyfung/pneumonia-two-stages-vgg16-densenet-inception-86
-
-
-
