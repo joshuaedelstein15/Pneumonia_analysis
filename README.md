@@ -75,10 +75,16 @@ For our baseline model we created a very simple model. We loaded up the data wit
 Here is how our model scored on the testing set:
 
 <div>
-<img src="images/baseline_report.jpg", width = 300, height = 133/>
+<img src="images/baseline_report.jpg", width = 350, height = 133/>
 </div>
 
-talk about how it predicts everything as pneumonia. Then do final model. explain it well from cnn to skip step. then ...
+Interestingly the recall is 100% while the precision and accuracy are exactly the same and also happen to be the exact same as the percentage of xrays with pnuemonia in the testing set. It seems as though the model is just predicting every single xray as pneumonia. Clearly this isn't a very good model at all. 
+
+### Final Model
+
+<div>
+<img src="images/final_model_report.jpg", width = 300, height = 133/>
+</div>
 
 
 
